@@ -1,3 +1,7 @@
+variable "aws_region" {}
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
+
 //name of the bucket
 variable "bucket_name" {}
 
