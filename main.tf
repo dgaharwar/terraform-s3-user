@@ -7,6 +7,7 @@ provider "aws" {
   region     = var.aws_region
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
+}
 
 # we need a service account user
 resource "aws_iam_user" "user" {
