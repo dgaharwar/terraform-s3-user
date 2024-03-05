@@ -2,6 +2,11 @@
  * A Terraform module that creates a tagged S3 bucket and an IAM user/key with access to the bucket
  */
 
+# aws credentials
+provider "was" {
+  region     = var.aws_region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 
 # we need a service account user
 resource "aws_iam_user" "user" {
