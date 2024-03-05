@@ -28,7 +28,7 @@ resource "aws_s3_bucket" "bucket" {
     enabled = "${var.versioning}"
   }
 
-  tags {
+  tags = {
     team          = "${var.tag_team}"
     application   = "${var.tag_application}"
     environment   = "${var.tag_environment}"
